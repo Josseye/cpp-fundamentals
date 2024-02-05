@@ -1,8 +1,10 @@
 #include <iostream>
+#include <memory>
 
-// TODO: Implement calculateProduct()
-// It should take 2 int values and return their product as a shared_ptr.
-// Additionally, check how many owners are there.
+std::shared_ptr<int> calculateProduct (int a, int b) {
+    std::shared_ptr<int> commonpointer;
+    return commonpointer  = std::make_shared<int>(a*b);
+}
 
 int main() {
     auto number = calculateProduct(10, 20);
